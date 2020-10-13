@@ -1,0 +1,20 @@
+/* Global Reset */
+*,
+*::after,
+*::before {
+    
+    box-sizing: inherit !important;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #555;
+    padding: 3rem;  
+    box-sizing: border-box;
+}

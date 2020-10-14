@@ -12,9 +12,108 @@ html {
 
 body {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: #555;
     padding: 3rem;  
     box-sizing: border-box;
+    padding: 0;
+}
+
+/*** global ***/
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #21110e;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+section {
+    margin-top: 15rem;
+}
+
+/*** start of navbar section ***/
+
+/*** logo ***/
+.navbar-brand {
+    font-size: 2rem;
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+.navbar-brand span {
+    color: #ffb200;
+}
+
+/*** links ***/
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link  {
+    color: #ffb200;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 1rem 0 0 2.5rem;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffd880;
+}
+
+.navbar-light .navbar-nav .nav-item .phone-number {
+    border: 1px solid #ffd880 ;
+    border-radius: 7px;
+}
+
+
+/*** start of header section ***/
+#header-section {
+    height: 85vh;
+    background-image: linear-gradient( 
+        to right bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.5)),
+    url("../img/hero.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    
+    clip-path: polygon(0 0 , 100% 0, 100% 65vh, 0 100%);
+}
+
+.header-text {
+    position: absolute;
+    top: 38%;
+    left: 20%;
+    color: #ffffff;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.header-text p {
+    margin-bottom: 2.5rem;
+}
+
+.header-text a {
+    background-color: #ffb200;
+    padding: 0.8rem 4rem;
+    border-radius: 0.7rem;
+    color: #21110e;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#feature-section img {
+    width: auto !important;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.carousel .carousel-inner h5, p {
+    color: ;
 }

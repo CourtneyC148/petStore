@@ -22,18 +22,27 @@ body {
 }
 
 /*** global ***/
+a {
+    text-decoration: none !important;
+}
+
 h2 {
     font-weight: 600;
     font-size: 3rem;
     color: #21110e;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3.5rem;
 }
 
 section {
     margin-top: 15rem;
 }
 
+.row{
+    flex-wrap: nowrap;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 /*** start of navbar section ***/
 
 /*** logo ***/
@@ -105,7 +114,64 @@ section {
     border-radius: 0.7rem;
     color: #21110e;
     font-weight: 400;
-    text-decoration: none;
+}
+
+.cta {
+    background-color: #b0d6eb;
+    padding: 0.8rem 4rem;
+    border-radius: 0.7rem;
+    color: #21110e;
+    font-weight: 400;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.cta:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.cta::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.cta:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+/*** start of feature section ***/
+
+.paw-print {
+    font-size: 15rem;
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    color: #ffd880;
+    z-index: -1;
+}
+
+.paw-print2 {
+    font-size: 15rem;
+    position: absolute;
+    top: 135%;
+    left: 83%;
+    color: #ffd880;
+    z-index: -1;
 }
 
 #feature-section img {
@@ -114,6 +180,33 @@ section {
     margin: 0 auto;
 }
 
-.carousel .carousel-inner h5, p {
-    color: ;
+.carousel {
+    margin-top: 3rem;
+}
+
+.carousel .carousel-inner h5 {
+    color: #21110e;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.carousel .carousel-inner p {
+    color: #21110e;
+    font-weight: 400;
+}
+
+/*** start of best section ***/
+
+#best-section {
+    background-color: #b0d6eb;
+    height: 40rem;
+}
+
+#best-section .container {
+    padding-top: 7rem;
+}
+
+#best-section .container .icon {
+    font-size: 3rem;
+    color: #ffffff;
 }

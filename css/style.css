@@ -1,10 +1,10 @@
 /* Global Reset */
-*,
+/* *,
 *::after,
 *::before {
     
     box-sizing: inherit !important;
-}
+} */
 
 html {
     font-size: 62.5%;
@@ -31,7 +31,8 @@ h2 {
     font-size: 3rem;
     color: #21110e;
     text-align: center;
-    padding-bottom: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 section {
@@ -39,7 +40,6 @@ section {
 }
 
 .row{
-    flex-wrap: nowrap;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -78,7 +78,7 @@ section {
 
 /*** start of header section ***/
 #header-section {
-    height: 85vh;
+    height: 90vh;
     background-image: linear-gradient( 
         to right bottom,
         rgba(0, 0, 0, 0.2),
@@ -89,7 +89,7 @@ section {
     background-position: top center;
     position: relative;
     
-    clip-path: polygon(0 0 , 100% 0, 100% 65vh, 0 100%);
+    clip-path: polygon(0 0 , 100% 0, 100% 70vh, 0 100%);
 }
 
 .header-text {
@@ -198,15 +198,60 @@ section {
 /*** start of best section ***/
 
 #best-section {
-    background-color: #b0d6eb;
-    height: 40rem;
+    /* background-image: linear-gradient( 
+        to right bottom,
+        rgba(0, 0, 0, 0.432),
+        rgba(0, 0, 0, 0.5)),
+    url("../img/kitera.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    height: 50rem;
+    color: #ffffff; */
+    height: 50rem;
+
+    background-color: #ffb200;
 }
 
+/* #best-section h2 {
+    color: #ffffff;
+} */
+
 #best-section .container {
-    padding-top: 7rem;
+    padding-top: 2rem;
 }
 
 #best-section .container .icon {
     font-size: 3rem;
-    color: #ffffff;
+    color: #21110e;
+}
+
+/*** start of offer section ***/
+
+#offer-section img {
+    width: 200px;
+    height: 200px;
+}
+
+#offer-section h3 {
+    color: #21110e;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/*** start of location section ***/
+
+#location-section {
+    background-color: #b0d6eb;
+    color: #21110e;
+    padding: 50px 0;
+}
+
+/*** footer section ***/
+footer {
+    padding: 2.5rem;
+    background-color: #21110e
+}
+footer ul {
+    list-style-type: none;
 }

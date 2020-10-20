@@ -34,6 +34,10 @@ a {
     text-decoration: none !important;
 }
 
+ul {
+    list-style-type: none;
+}
+
 h2 {
     font-weight: 600;
     font-size: 3rem;
@@ -155,4 +159,46 @@ section {
 .cta:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+
+/*** start of  side navbar ***/
+/* .side-navbar {
+    background-color: #ffb200;
+    display: inline-block;
+    padding: 5rem 2.5rem;
+    width: 20rem;
+    border-radius: 0 7px 7px 0;
+}
+
+.side-navbar ul {
+    padding-left: 0;
+    padding-top: 2.5rem;
+} 
+
+.side-navbar ul li {
+   padding: 0.5rem 0;
+} 
+
+.side-navbar h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #21110e;
+ } 
+
+.side-navbar a {
+    color: #21110e;
+    font-weight: 400;
+ } 
+
+ .side-navbar a:hover {
+    color: #21110e;
+    text-decoration: underline !important;
+ }  */
+/*** end of  side navbar ***/
+
+
+.shopping-products img {
+    width: 15rem;
+    height: auto;
 }

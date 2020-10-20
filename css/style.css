@@ -1,13 +1,17 @@
 /* Global Reset */
-/* *,
-*::after,
-*::before {
-    
-    box-sizing: inherit !important;
-} */
+* {
+    /* margin: 0 ;
+    padding: 0; */
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+     
+}
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -16,12 +20,16 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #555;
-    padding: 3rem;  
-    box-sizing: border-box;
-    padding: 0;
+    /* padding: 3rem;   */
+    
 }
 
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 /*** global ***/
+
 a {
     text-decoration: none !important;
 }
@@ -39,10 +47,7 @@ section {
     margin-top: 15rem;
 }
 
-.row{
-    margin: 0 !important;
-    padding: 0 !important;
-}
+
 /*** start of navbar section ***/
 
 /*** logo ***/
@@ -175,47 +180,55 @@ section {
 }
 
 #feature-section img {
-    width: auto !important;
-    height: 400px;
+    width: 30rem !important;
+    height: auto;
     margin: 0 auto;
+    border-radius: 0.7rem;
 }
 
-.carousel {
-    margin-top: 3rem;
+#feature-section  p {
+   margin: 2.5rem 0;
 }
 
-.carousel .carousel-inner h5 {
-    color: #21110e;
-    font-weight: 700;
-    font-size: 1.8rem;
+/*** modal ***/
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
 }
 
-.carousel .carousel-inner p {
-    color: #21110e;
-    font-weight: 400;
+.modal-container .show {
+    opacity: 1;
+    pointer-events: auto;
+    
 }
+
+.adopt-modal {
+    background-color: #ffffff;
+    width: 80rem;
+    height: fit-content;
+    max-width: 100%;
+    padding: 3rem 5rem;
+    
+}
+
 
 /*** start of best section ***/
 
 #best-section {
-    /* background-image: linear-gradient( 
-        to right bottom,
-        rgba(0, 0, 0, 0.432),
-        rgba(0, 0, 0, 0.5)),
-    url("../img/kitera.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top center;
-    height: 50rem;
-    color: #ffffff; */
-    height: 50rem;
-
+    height: auto;
     background-color: #ffb200;
+    padding: 4rem 0;
 }
-
-/* #best-section h2 {
-    color: #ffffff;
-} */
 
 #best-section .container {
     padding-top: 2rem;
@@ -229,8 +242,8 @@ section {
 /*** start of offer section ***/
 
 #offer-section img {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
 }
 
 #offer-section h3 {
@@ -244,14 +257,33 @@ section {
 #location-section {
     background-color: #b0d6eb;
     color: #21110e;
-    padding: 50px 0;
+    padding: 5rem 0;
 }
 
 /*** footer section ***/
 footer {
     padding: 2.5rem;
-    background-color: #21110e
+    background-color: #232323;
 }
 footer ul {
     list-style-type: none;
+}
+
+footer input {
+    width: 225px;
+    height: 4rem;
+    border-radius: 0.7rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+footer .cta {
+    margin-left: 1rem;
+    background-color: #ffb200;
+}
+
+footer .social-icons {
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #ffb200;
 }

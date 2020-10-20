@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+    /* margin: 0 ;
+    padding: 0; */
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+     
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #555;
+    /* padding: 3rem;   */
+    
+}
+
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/*** global ***/
+
+a {
+    text-decoration: none !important;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #21110e;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+section {
+    margin-top: 15rem;
+}
+
+
+/*** start of navbar section ***/
+
+/*** logo ***/
+.navbar-brand {
+    font-size: 2rem;
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+.navbar-brand span {
+    color: #ffb200;
+}
+
+/*** links ***/
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link  {
+    color: #ffb200;
+}
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 1rem 0 0 2.5rem;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffd880;
+}
+
+.navbar-light .navbar-nav .nav-item .phone-number {
+    border: 1px solid #ffd880 ;
+    border-radius: 7px;
+}
+
+
+/*** start of header section ***/
+#header-section {
+    height: 90vh;
+    background-image: linear-gradient( 
+        to right bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.5)),
+    url("../img/kitera.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom left;
+    position: relative;
+    
+    clip-path: polygon(0 0 , 100% 0, 100% 70vh, 0 100%);
+}
+
+.header-text {
+    position: absolute;
+    top: 38%;
+    left: 20%;
+    color: #ffffff;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.header-text p {
+    margin-bottom: 2.5rem;
+}
+
+.header-text a {
+    background-color: #ffb200;
+    padding: 0.8rem 4rem;
+    border-radius: 0.7rem;
+    color: #21110e;
+    font-weight: 400;
+}
+
+.cta {
+    background-color: #b0d6eb;
+    padding: 0.8rem 4rem;
+    border-radius: 0.7rem;
+    color: #21110e;
+    font-weight: 400;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.cta:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.cta::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.cta:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}

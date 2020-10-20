@@ -125,6 +125,14 @@ section {
     font-weight: 400;
 }
 
+#header-section input {
+    width: 225px;
+    height: 4rem;
+    border-radius: 0.7rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
 .cta {
     background-color: #b0d6eb;
     padding: 0.8rem 4rem;
@@ -201,4 +209,36 @@ section {
 .shopping-products img {
     width: 15rem;
     height: auto;
+}
+
+.shopping .shopping-products .product{
+    margin-bottom: 8rem;
+}
+
+/*** footer section ***/
+footer {
+    padding: 2.5rem;
+    background-color: #232323;
+}
+footer ul {
+    list-style-type: none;
+}
+
+footer input {
+    width: 225px;
+    height: 4rem;
+    border-radius: 0.7rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+footer .cta {
+    margin-left: 1rem;
+    background-color: #ffb200;
+}
+
+footer .social-icons {
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #ffb200;
 }

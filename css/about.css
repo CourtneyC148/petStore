@@ -92,7 +92,7 @@ section {
         to right bottom,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.5)),
-    url("../img/kitera.jpg");
+    url("../img/mikhail.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom left;
@@ -167,82 +167,4 @@ section {
 .cta:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
-}
-
-/*** start of shopping section ***/
-
-/*** start of shop navbar ***/
-.side-navbar {
-    background-color: #ffd880;
-    border-radius: 7px;
-}
-
-.side-navbar ul {
-    margin-bottom: 10rem;
-    padding: 1rem 0 1rem 0;
-} 
-
-.side-navbar ul li {
-   padding: 0 1.5rem;
-   display: inline-block;
-} 
-
-.side-navbar h4 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #21110e;
- } 
-
-.side-navbar a {
-    color: #21110e;
-    font-weight: 400;
- } 
-
- .side-navbar a:hover {
-    text-decoration: underline !important;
- } 
-/*** end of shop navbar ***/
-
-.shopping-products img {
-    width: 15rem;
-    height: auto;
-}
-
-.shopping .shopping-products .product{
-    margin-bottom: 8rem;
-}
-/*** end of shopping section ***/
-/*** brands ***/
-
-.brands {
-    padding: 3rem 0 5rem 0;
-}
-
-/*** footer section ***/
-footer {
-    padding: 2.5rem;
-    background-color: #232323;
-}
-footer ul {
-    list-style-type: none;
-}
-
-footer input {
-    width: 225px;
-    height: 4rem;
-    border-radius: 0.7rem;
-    border: none;
-    padding: 0.5rem 1rem;
-}
-
-footer .cta {
-    margin-left: 1rem;
-    background-color: #ffb200;
-}
-
-footer .social-icons {
-    padding-left: 1rem;
-    font-size: 2rem;
-    color: #ffb200;
 }

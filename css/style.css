@@ -77,7 +77,7 @@ section {
 
 .navbar-light .navbar-nav .nav-item .phone-number {
     border: 1px solid #ffd880 ;
-    border-radius: 7px;
+    border-radius: 0.4rem;
 }
 
 
@@ -116,7 +116,7 @@ section {
 .header-text a {
     background-color: #ffb200;
     padding: 0.8rem 4rem;
-    border-radius: 0.7rem;
+    border-radius: 0.4rem;
     color: #21110e;
     font-weight: 400;
 }
@@ -124,7 +124,7 @@ section {
 .cta {
     background-color: #b0d6eb;
     padding: 0.8rem 4rem;
-    border-radius: 0.7rem;
+    border-radius: 0.4rem;
     color: #21110e;
     font-weight: 400;
 }
@@ -272,7 +272,7 @@ footer ul {
 footer input {
     width: 225px;
     height: 4rem;
-    border-radius: 0.7rem;
+    border-radius: 0.4rem;
     border: none;
     padding: 0.5rem 1rem;
 }

@@ -1,7 +1,5 @@
 /* Global Reset */
 * {
-    /* margin: 0 ;
-    padding: 0; */
     border: 0;
     outline: 0;
     vertical-align: baseline;
@@ -20,8 +18,6 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #555;
-    /* padding: 3rem;   */
-    
 }
 
 .row{
@@ -50,8 +46,6 @@ h2 {
 section {
     margin-top: 15rem;
 }
-
-
 /*** start of navbar section ***/
 
 /*** logo ***/
@@ -81,9 +75,8 @@ section {
 
 .navbar-light .navbar-nav .nav-item .phone-number {
     border: 1px solid #ffd880 ;
-    border-radius: 7px;
+    border-radius: 0.4rem;
 }
-
 
 /*** start of header section ***/
 #header-section {
@@ -92,7 +85,7 @@ section {
         to right bottom,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.5)),
-    url("../img/mikhail.jpg");
+    url("../img/leonardo.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom left;
@@ -117,26 +110,9 @@ section {
     margin-bottom: 2.5rem;
 }
 
-.header-text a {
-    background-color: #ffb200;
-    padding: 0.8rem 4rem;
-    border-radius: 0.7rem;
-    color: #21110e;
-    font-weight: 400;
-}
-
-#header-section input {
-    width: 225px;
-    height: 4rem;
-    border-radius: 0.7rem;
-    border: none;
-    padding: 0.5rem 1rem;
-}
-
 .cta {
-    background-color: #b0d6eb;
     padding: 0.8rem 4rem;
-    border-radius: 0.7rem;
+    border-radius: 0.4rem;
     color: #21110e;
     font-weight: 400;
 }
@@ -167,4 +143,52 @@ section {
 .cta:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+/*** end of header section ***/
+
+/*** who we are section ***/
+
+.about-section img {
+    height: 50rem;
+    width: auto;
+    border-radius: 0.4rem;
+}
+
+.about-section .whyWeDoIt-box {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.about-section .whyWeDoIt-box ul {
+    list-style-type: circle;
+}
+
+/*** why we do it section ***/
+
+/*** footer section ***/
+footer {
+    padding: 2.5rem;
+    background-color: #232323;
+}
+footer ul {
+    list-style-type: none;
+}
+
+footer input {
+    width: 225px;
+    height: 4rem;
+    border-radius: 0.7rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+footer .cta {
+    margin-left: 1rem;
+    background-color: #ffb200;
+}
+
+footer .social-icons {
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #ffb200;
 }

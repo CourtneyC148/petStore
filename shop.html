@@ -28,7 +28,7 @@
                         <a class="nav-link" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Contact</a>
@@ -43,17 +43,161 @@
         <div class="header-text container">
             <h1>20% Off Your Order!</h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt molestiae <br> 
-                voluptatum odit, incidunt eligendi quidem distinctio in, consectetur enim necessitatibus <br>
-                excepturi cumque ipsa cupiditate voluptatibus corrupti eum quibusdam dolore?
+                Not a member of The Pet Shop? Sign up today and get 20% off your first order! Sign up <br> to be notified when we have a sale and keep up with what the The Pet Shop is doing!
             </p>
             <input type="email" placeholder="Your Email Address" required>
-            <a class="cta" href="#">Sign Up</a>
+            <a type="button" class=" cta" data-toggle="modal" data-target="#exampleModal" href="#">Sign Up</a>
         </div>
     </header>
 
+    <!-- Start Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">The Pet Sh<span><i class="fas fa-paw"></i></span>p</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Thank you for signing up!</h3>
+                    <p>Please use the code: <strong>FirstOrder</strong> to get your 20% off!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of  modal -->
+
     <main>
+        <section class="shopping">
+            <div class="shopping-products container">
+                <h2>Shop</h2>
+                <div class="side-navbar text-center">
+                    <ul>
+                        <li>
+                            <a href="#">All</a>
+                        </li>
+                        <li>
+                            <a href="#">Food</a>
+                        </li>
+                        <li>
+                            <a href="#">Treats</a>
+                        </li>
+                        <li>
+                            <a href="#">Cleaning Supplies</a>
+                        </li>
+                        <li>
+                            <a href="#">Beds & Funiture</a>
+                        </li>
+                        <li>
+                            <a href="#">Crates & Gates</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/cat-food1.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Purina Friskies Classic Paté Cat Food 5.5oz</h3>
+                        <p>
+                            <strong>$0.56</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/cat-food2.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Hill's Science Diet Indoor Adult Cat Food - Chicken</h3>
+                        <p>
+                            <strong>$40.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/dog-food1.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Milk-Bone Original Large Biscuit Dog Treats</h3>
+                        <p>
+                            <strong>$13.97</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/dog-food2.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Purina Beggin' Strips Dog Treat - Bacon</h3>
+                        <p>
+                            <strong>$10.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/dog-food3.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Simply Nourish - Natural, Chicken & Brown Rice</h3>
+                        <p>
+                            <strong>$41.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/dog-food4.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Instinct Frozen Raw Dog Food - Natural, Grain Free, Raw</h3>
+                        <p>
+                            <strong>$17.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/dog-house.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Trixie Pet Products Dog's Inn Dog House</h3>
+                        <p>
+                            <strong>$178.97</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/dog-house2.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Petmate Top Load Pet Carrier</h3>
+                        <p>
+                            <strong>$32.95</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/cat-litter1.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Litter Genie™ Plus Cat Litter Disposal System</h3>
+                        <p>
+                            <strong>$17.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/cat-litter2.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>Great Choice® Classic Clay Cat Litter - Non-Clumping</h3>
+                        <p>
+                            <strong>$8.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/cat-play1.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>SmartCat Cat Scratcher</h3>
+                        <p>
+                            <strong>$49.97</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+
+                    <div class="product col-sm-6 col-md-4 col-lg-3 ">
+                        <img src="img/cat-bed1.jpeg" alt="" class="img-fluid mb-4">
+                        <h3>PetPals Round Basket Cat Bed</h3>
+                        <p>
+                            <strong>$33.99</strong> <a href="#" class="ml-4">Add to Cart</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
         <div class="container brands">
+            <hr>
             <h2>Brands We Love</h2>
             <div class="row">
                 <div class="col-lg-2 d-flex justify-content-center">
@@ -80,135 +224,7 @@
                     <img src="img/BRLOGO.png" alt="blue logo">
                 </div>
             </div>
-            <hr>
         </div>
-       
-        <section class="shopping">
-            <!-- <div class="side-navbar">
-                <h4>Categories</h4>
-                <ul>
-                    <li>
-                        <a href="#">All</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop By Dogs</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop By Cats</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop By Birds</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop By Fish</a>
-                    </li>
-                    <li>
-                        <a href="#">Supplies</a>
-                    </li>
-                </ul>
-            </div> -->
-
-            <div class="shopping-products container">
-                <h2>Shop</h2>
-                <div class="row">
-                    <div class="product col-lg-3">
-                        <img src="img/cat-food1.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Purina Friskies Classic Paté Cat Food 5.5oz</h3>
-                        <p>
-                            <strong>$0.56</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/cat-food2.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Hill's Science Diet Indoor Adult Cat Food - Chicken</h3>
-                        <p>
-                            <strong>$40.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/dog-food1.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Milk-Bone Original Large Biscuit Dog Treats</h3>
-                        <p>
-                            <strong>$13.97</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/dog-food2.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Purina Beggin' Strips Dog Treat - Bacon</h3>
-                        <p>
-                            <strong>$10.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/dog-food3.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Simply Nourish - Natural, Chicken & Brown Rice</h3>
-                        <p>
-                            <strong>$41.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/dog-food4.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Instinct Frozen Raw Dog Food - Natural, Grain Free, Raw</h3>
-                        <p>
-                            <strong>$17.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/dog-house.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Trixie Pet Products Dog's Inn Dog House</h3>
-                        <p>
-                            <strong>$178.97</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/dog-house2.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Petmate Top Load Pet Carrier</h3>
-                        <p>
-                            <strong>$32.95</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/cat-litter1.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Litter Genie™ Plus Cat Litter Disposal System</h3>
-                        <p>
-                            <strong>$17.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/cat-litter2.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>Great Choice® Classic Clay Cat Litter - Non-Clumping</h3>
-                        <p>
-                            <strong>$8.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/cat-play1.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>SmartCat Cat Scratcher</h3>
-                        <p>
-                            <strong>$49.97</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-
-                    <div class="product col-lg-3">
-                        <img src="img/cat-bed1.jpeg" alt="" class="img-fluid mb-4">
-                        <h3>PetPals Round Basket Cat Bed</h3>
-                        <p>
-                            <strong>$33.99</strong> <a href="#" class="ml-4">Add to Cart</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>

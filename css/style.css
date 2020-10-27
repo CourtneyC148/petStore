@@ -82,10 +82,11 @@ section {
 }
 
 #nav-bar {
-    position: sticky;
+    position: fixed;
     transition: top 0.3s;
     padding: 0 7% 10px 7%;
-    z-index: 100;
+    z-index: 1;
+    width: 100%;
 }
 
 .color {

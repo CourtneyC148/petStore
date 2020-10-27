@@ -58,7 +58,7 @@ section {
 }
 
 .navbar-brand span {
-    color: #ffb200;
+    color: #21110e;
 }
 
 /*** links ***/
@@ -72,15 +72,30 @@ section {
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffd880;
+    color: #ffffff;
 }
 
 .navbar-light .navbar-nav .nav-item .phone-number {
-    border: 1px solid #ffd880 ;
+    border: 1px solid #ffffff;
     border-radius: 0.4rem;
+
 }
 
+#nav-bar {
+    position: sticky;
+    transition: top 0.3s;
+    padding: 0 7% 10px 7%;
+    z-index: 100;
+}
 
+.color {
+    background-color: #ffb200;
+}
+
+.link-color {
+      color: #21110e;
+}
+  
 /*** start of header section ***/
 #header-section {
     height: 90vh;
@@ -189,38 +204,6 @@ section {
 #feature-section  p {
    margin: 2.5rem 0;
 }
-
-/*** modal ***/
-
-.modal-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100vw;
-    height: 100vh;
-}
-
-.modal-container .show {
-    opacity: 1 !important;
-    pointer-events: auto;
-    
-}
-
-.adopt-modal {
-    background-color: #ffffff;
-    width: 80rem;
-    height: fit-content;
-    max-width: 100%;
-    padding: 3rem 5rem;
-    
-}
-
 
 /*** start of best section ***/
 

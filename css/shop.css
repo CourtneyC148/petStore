@@ -62,7 +62,7 @@ section {
 }
 
 .navbar-brand span {
-    color: #ffb200;
+    color: #21110e;
 }
 
 /*** links ***/
@@ -76,13 +76,29 @@ section {
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffd880;
+    color: #ffffff;
 }
 
 .navbar-light .navbar-nav .nav-item .phone-number {
-    border: 1px solid #ffd880 ;
+    border: 1px solid #ffffff ;
     border-radius: 0.4rem;
 }
+
+#nav-bar {
+    position: sticky;
+    transition: top 0.3s;
+    padding: 0 7% 10px 7%;
+    z-index: 1;
+}
+
+.color {
+    background-color: #ffb200;
+}
+
+.link-color {
+      color: #21110e;
+}
+  
 
 
 /*** start of header section ***/

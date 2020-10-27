@@ -13,7 +13,7 @@
     <!-- start header section -->
     <header id="header-section">
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light container">
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">The Pet Sh<span><i class="fas fa-paw"></i></span>p</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -267,5 +267,20 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            document.getElementById("nav-bar").classList.add("color");
+            // document.getElementById("links").classList.add("link-color");
+  
+            } else {
+            document.getElementById("nav-bar").style.top = "0px";
+            document.getElementById("nav-bar").classList.remove("color");
+            }
+        }
+    </script>
 </body>
 </html>

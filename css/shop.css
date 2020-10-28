@@ -62,7 +62,7 @@ section {
 }
 
 .navbar-brand span {
-    color: #21110e;
+    color: #ffb200;
 }
 
 /*** links ***/
@@ -76,23 +76,31 @@ section {
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #ffd880;
 }
 
 .navbar-light .navbar-nav .nav-item .phone-number {
-    border: 1px solid #ffffff ;
+    border: 1px solid #ffd880 ;
     border-radius: 0.4rem;
 }
 
 #nav-bar {
-    position: sticky;
+    position: fixed;
     transition: top 0.3s;
     padding: 0 7% 10px 7%;
     z-index: 1;
+    width: 100%;
 }
 
 .color {
     background-color: #ffb200;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .link-color {

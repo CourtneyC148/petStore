@@ -6,8 +6,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
       document.getElementById("nav-bar").classList.add("color");
-      document.getElementById("links").classList.add("link-color");
-  
+      document.getElementById("links").classList.add("link-color");  
     } else {
       document.getElementById("nav-bar").style.top = "0px";
       document.getElementById("nav-bar").classList.remove("color");

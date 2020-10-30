@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <title>The Pet Shop | Fury Friends For Everyone</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/cat-footprint.png"/>
+    <title>The Pet Shop | Supplies For Your Fury Friends</title>
 </head>
 <body>
     <!-- navigation bar -->
@@ -43,9 +44,8 @@
         <div class="header-text container">
             <h1>The Pet Shop</h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt molestiae <br> 
-                voluptatum odit, incidunt eligendi quidem distinctio in, consectetur enim necessitatibus <br>
-                excepturi cumque ipsa cupiditate voluptatibus corrupti eum quibusdam dolore?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt molestiae  
+                voluptatum odit, incidunt eligendi quidem distinctio in, consectetur enim necessitatibus excepturi cumque ipsa cupiditate voluptatibus corrupti eum quibusdam dolore?
             </p>
 
             <a class="cta" href="shop.html">Shop Now</a>
@@ -248,5 +248,19 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            document.getElementById("nav-bar").classList.add("color");
+            document.getElementById("links").classList.add("link-color");  
+            } else {
+            document.getElementById("nav-bar").style.top = "0px";
+            document.getElementById("nav-bar").classList.remove("color");
+            }
+        }
+    </script>
 </body>
 </html>

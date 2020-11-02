@@ -13,7 +13,7 @@
 <body>
     <!-- navigation bar -->
     <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">The Pet Sh<span><i class="fas fa-paw"></i></span>p</a>
+        <a class="navbar-brand" href="#">The Pet Sh<span id="pawLogo"><i class="fas fa-paw"></i></span>p</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -275,13 +275,19 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-            document.getElementById("nav-bar").classList.add("color");
-            // document.getElementById("links").classList.add("link-color");
-  
-            } else {
-            document.getElementById("nav-bar").style.top = "0px";
-            document.getElementById("nav-bar").classList.remove("color");
+            let links = document.getElementsByClassName("nav-link")
+
+            for (let i = 0; i < links.length; i++) {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    document.getElementById("nav-bar").classList.add("color");
+                    document.getElementById("pawLogo").classList.add("link-color");
+                    links[i].classList.add("link-color");
+                    } else {
+                document.getElementById("nav-bar").style.top = "0px";
+                document.getElementById("nav-bar").classList.remove("color");
+                document.getElementById("pawLogo").classList.remove("link-color");
+                links[i].classList.remove("link-color");
+                }
             }
         }
     </script>

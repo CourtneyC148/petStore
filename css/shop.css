@@ -141,14 +141,6 @@ section {
     margin-bottom: 2.5rem;
 }
 
-.header-text a {
-    background-color: #ffb200;
-    padding: 0.8rem 4rem;
-    border-radius: 0.4rem;
-    color: #21110e;
-    font-weight: 400;
-}
-
 #header-section input {
     width: 225px;
     height: 4rem;
@@ -158,6 +150,7 @@ section {
 }
 
 .cta {
+    background-color: #ffb200;
     padding: 0.8rem 4rem;
     border-radius: 0.4rem;
     color: #21110e;
@@ -234,6 +227,32 @@ section {
 
 .shopping .shopping-products .product{
     margin-bottom: 8rem;
+    text-align: center;
+}
+
+.price {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.cart {
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #ffb200;
+}
+
+.cart:hover {
+    color: #ffd880;
+}
+
+.view {
+    font-size: 1.4rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.view:hover {
+    color: #555;
 }
 /*** end of shopping section ***/
 /*** brands ***/

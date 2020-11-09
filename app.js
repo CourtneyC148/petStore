@@ -64,7 +64,7 @@ const shop = [
     {
       image: 'img/cat-play1.jpeg',
       price: '49.97', 
-      description: "SmartCat Cat Scratcher"
+      description: "SmartCat Cat Post Scratcher"
     },
 
     {
@@ -82,8 +82,8 @@ const shop = [
     for (let i = 0; i < shop.length; i++) {
         let heading = '<div class="product col-sm-6 col-md-4 col-lg-3">';
         let image = '<img class="img-fluid mb-4" src="' + shop[i].image + '"/';
-        let price = '<div class=""><p> $' + shop[i].price + '</p>';
-        let description = '<p>'+ shop[i].description + '</p><button type="button" class="btn btn-warning"> add to cart</button></div></div>';
+        let price = '<div><p>' + '<span class="price"> $' + shop[i].price + '</span>';
+        let description = shop[i].description + '</p><a class="cart" href="#"><i class="fas fa-cart-plus"></i></a> <a class="view" href="#" target="_blank"> View Item</a></div></div>';
         let concatThis = heading + image + price + description;
         postHTML = postHTML + concatThis;
       }

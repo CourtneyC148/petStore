@@ -107,8 +107,6 @@ section {
       color: #21110e !important;
 }
   
-
-
 /*** start of header section ***/
 #header-section {
     height: 90vh;
@@ -183,6 +181,14 @@ section {
 .cta:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+
+#error {
+    color: red;
+    font-weight: 600;
+    display: none;
+    margin-top: 1rem;
+    transition: all 0.5s ease-in;
 }
 
 /*** start of shopping section ***/

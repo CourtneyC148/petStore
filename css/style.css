@@ -81,6 +81,10 @@ section {
 
 }
 
+#nav-bar button {
+    background-color: #ffb200 !important;
+}
+
 #nav-bar {
     position: fixed;
     transition: top 0.3s;
@@ -123,7 +127,7 @@ section {
 .header-text {
     position: absolute;
     top: 38%;
-    left: 20%;
+    left: 10%;
     color: #ffffff;
 }
 
@@ -134,7 +138,7 @@ section {
 
 .header-text p {
     margin-bottom: 2.5rem;
-    width: 50%;
+    max-width: 100%;
 }
 
 .header-text a {
@@ -203,11 +207,16 @@ section {
     z-index: -1;
 }
 
+.featured-pet-img {
+    padding: 1rem;
+}
+
 #feature-section img {
     width: 30rem !important;
     height: auto;
     margin: 0 auto;
     border-radius: 0.7rem;
+    max-width: 100%;
 }
 
 #feature-section  p {
@@ -262,7 +271,7 @@ footer ul {
 }
 
 footer input {
-    width: 225px;
+    width: 22.5rem;
     height: 4rem;
     border-radius: 0.4rem;
     border: none;
@@ -278,4 +287,39 @@ footer .social-icons {
     padding-left: 1rem;
     font-size: 2rem;
     color: #ffb200;
+}
+
+/* media queries */
+@media (max-width: 770px) {
+    .header-text .container {
+        max-width: 100%;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 28%;
+    }
+
+    .header-text p br {
+        display: none;
+    }
+}
+
+@media (max-width: 585px) {
+    .header-text {
+        padding: 0 3rem;
+    }
+
+    .header-text h1 {
+        font-size: 4.5rem;
+    }
+
+    .header-text {
+        position: absolute;
+        left: 0;
+    }
+
+    .header-text p br {
+        display: none;
+    }
 }

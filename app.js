@@ -88,4 +88,5 @@ const shop = [
         postHTML = postHTML + concatThis;
       }
     document.getElementById('market').innerHTML = postHTML;
+
   

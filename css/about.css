@@ -73,9 +73,18 @@ section {
     color: #ffd880;
 }
 
-.navbar-light .navbar-nav .nav-item .phone-number {
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffd880;
+}
+
+.navbar-light .navbar-nav .nav-item #phone-number {
     border: 1px solid #ffd880 ;
     border-radius: 0.4rem;
+}
+
+#nav-bar button {
+    background-color: #ffb200 !important;
+    outline: none;
 }
 
 #nav-bar {
@@ -172,8 +181,6 @@ section {
 /*** who we are section ***/
 
 .about-section img {
-    height: 50rem;
-    width: auto;
     border-radius: 0.4rem;
 }
 
@@ -198,9 +205,9 @@ footer ul {
 }
 
 footer input {
-    width: 225px;
-    height: 4rem;
-    border-radius: 0.7rem;
+    width: 200px;
+    height: 3rem;
+    border-radius: 0.4rem;
     border: none;
     padding: 0.5rem 1rem;
 }
@@ -208,10 +215,64 @@ footer input {
 footer .cta {
     margin-left: 1rem;
     background-color: #ffb200;
+    padding: 0.4rem 3rem;
+    border-radius: 0.4rem;
 }
 
 footer .social-icons {
     padding-left: 1rem;
     font-size: 2rem;
     color: #ffb200;
+}
+
+/*** media queries ***/
+
+@media (max-width: 990px) {
+    .header-text {
+        position: absolute;
+        left: 10%;
+    }
+
+    footer .container {
+        text-align: center;
+    }
+
+    footer form {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-text .container {
+        max-width: 100%;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 30%;
+    }
+
+    .header-text h1 {
+        font-size: 5rem;
+    }
+
+    .header-text p br {
+        display: none;
+    }
+}
+
+@media (max-width: 585px) {
+    .header-text {
+        padding: 0 3rem;
+    }
+
+    .header-text h1 {
+        font-size: 4.5rem;
+    }
+
+    .header-text {
+        position: absolute;
+        left: 0;
+    }
+
 }

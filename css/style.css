@@ -75,7 +75,11 @@ section {
     color: #ffd880;
 }
 
-.navbar-light .navbar-nav .nav-item .phone-number {
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffd880;
+}
+
+.navbar-light .navbar-nav .nav-item #phone-number {
     border: 1px solid #ffd880;
     border-radius: 0.4rem;
 
@@ -83,6 +87,7 @@ section {
 
 #nav-bar button {
     background-color: #ffb200 !important;
+    outline: none;
 }
 
 #nav-bar {
@@ -189,24 +194,6 @@ section {
 
 /*** start of feature section ***/
 
-.paw-print {
-    font-size: 15rem;
-    position: absolute;
-    top: 95%;
-    left: 10%;
-    color: #ffd880;
-    z-index: -1;
-}
-
-.paw-print2 {
-    font-size: 15rem;
-    position: absolute;
-    top: 135%;
-    left: 83%;
-    color: #ffd880;
-    z-index: -1;
-}
-
 .featured-pet-img {
     padding: 1rem;
 }
@@ -271,8 +258,8 @@ footer ul {
 }
 
 footer input {
-    width: 22.5rem;
-    height: 4rem;
+    width: 200px;
+    height: 3rem;
     border-radius: 0.4rem;
     border: none;
     padding: 0.5rem 1rem;
@@ -281,6 +268,8 @@ footer input {
 footer .cta {
     margin-left: 1rem;
     background-color: #ffb200;
+    padding: 0.4rem 3rem;
+    border-radius: 0.4rem;
 }
 
 footer .social-icons {
@@ -290,7 +279,23 @@ footer .social-icons {
 }
 
 /* media queries */
+@media (max-width: 990px) {
+
+    footer .container {
+        text-align: center;
+    }
+
+    footer form {
+        padding: 1rem 0;
+    }
+}
+
 @media (max-width: 770px) {
+
+    #header-section {
+        background-position: center;
+    }
+
     .header-text .container {
         max-width: 100%;
     }

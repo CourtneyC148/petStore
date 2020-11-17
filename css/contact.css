@@ -58,7 +58,7 @@ main {
     font-weight: 400;
 }
 
-.navbar-brand span {
+#pawLogo {
     color: #21110e;
 }
 
@@ -166,8 +166,8 @@ footer ul {
 }
 
 footer input {
-    width: 225px;
-    height: 4rem;
+    width: 200px;
+    height: 3rem;
     border-radius: 0.4rem;
     border: none;
     padding: 0.5rem 1rem;
@@ -176,10 +176,32 @@ footer input {
 footer .cta {
     margin-left: 1rem;
     background-color: #ffb200;
+    padding: 0.4rem 3rem;
+    border-radius: 0.4rem;
+}
+
+footer span {
+    color: #ffb200;
 }
 
 footer .social-icons {
     padding-left: 1rem;
     font-size: 2rem;
     color: #ffb200;
+}
+
+/*** media queries ***/
+
+@media (max-width: 990px) {
+    .contact-box .img {
+        display: flex;
+        justify-content: center;
+    }
+    footer .container {
+        text-align: center;
+    }
+
+    footer form {
+        padding: 1rem 0;
+    }
 }

@@ -127,9 +127,11 @@ section {
 }
 
 .header-text {
-    position: absolute;
-    top: 38%;
-    left: 20%;
+    text-align: center;
+    padding-top: 15%;
+    /* position: absolute;
+    top: 35%;
+    left: 10%; */
     color: #ffffff;
 }
 
@@ -229,8 +231,7 @@ footer .social-icons {
 
 @media (max-width: 990px) {
     .header-text {
-        position: absolute;
-        left: 10%;
+        padding-top: 35%;
     }
 
     footer .container {
@@ -248,8 +249,7 @@ footer .social-icons {
     }
 
     .header-text {
-        position: absolute;
-        top: 30%;
+        padding-top: 45%;
     }
 
     .header-text h1 {
@@ -271,8 +271,7 @@ footer .social-icons {
     }
 
     .header-text {
-        position: absolute;
-        left: 0;
+        padding-top: 55%;
     }
 
 }

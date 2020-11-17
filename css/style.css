@@ -268,8 +268,10 @@ footer input {
 footer .cta {
     margin-left: 1rem;
     background-color: #ffb200;
-    padding: 0.4rem 3rem;
+    padding: 0.3rem 3rem;
     border-radius: 0.4rem;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 footer .social-icons {
@@ -280,6 +282,15 @@ footer .social-icons {
 
 /* media queries */
 @media (max-width: 990px) {
+
+    .header-text {
+        position: absolute;
+        left: 5%;
+    }
+
+    .header-text p br {
+        display: none;
+    }
 
     footer .container {
         text-align: center;
@@ -304,10 +315,6 @@ footer .social-icons {
         position: absolute;
         top: 28%;
     }
-
-    .header-text p br {
-        display: none;
-    }
 }
 
 @media (max-width: 585px) {
@@ -322,9 +329,5 @@ footer .social-icons {
     .header-text {
         position: absolute;
         left: 0;
-    }
-
-    .header-text p br {
-        display: none;
     }
 }

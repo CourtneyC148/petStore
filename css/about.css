@@ -217,8 +217,10 @@ footer input {
 footer .cta {
     margin-left: 1rem;
     background-color: #ffb200;
-    padding: 0.4rem 3rem;
+    padding: 0.3rem 3rem;
     border-radius: 0.4rem;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
 footer .social-icons {

@@ -199,11 +199,15 @@ section {
 }
 
 #feature-section img {
-    width: 30rem !important;
+    width: 15rem !important;
     height: auto;
     margin: 0 auto;
-    border-radius: 0.7rem;
     max-width: 100%;
+}
+
+#feature-section img:hover {
+   position: relative;
+   bottom: 10px;
 }
 
 #feature-section  p {
